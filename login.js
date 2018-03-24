@@ -1,4 +1,6 @@
-var loggedin = true;
+<script type="text/javascript" src="index.js"></script>
+
+var loggedin;
 var user = "rmcinty3";
 var obj = {
   "rmcinty3": {
