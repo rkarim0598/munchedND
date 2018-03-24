@@ -12,7 +12,22 @@
   <!-- Bootstrap CSS files-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <style>
-    #login_div1 margin-px = "24" !important
+    #login_div1 {
+      margin-left: 1%;
+      margin-right: 1%;
+      width: 97.5%;
+    }
+
+    .our_background {
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      background-color: rgba(137, 173, 203);
+    }
   </style>
 
   <!-- jQuery UI CSS (optional) -->
@@ -27,6 +42,11 @@
 </head>
 
 <body>
+  <div class="our_background">
+    <center>
+      <img src="Munched_Logo_2" width="auto" height="auto" class="img img-responsive center-block">
+    </center>
+  </div>
 
   <!-- [ This is where your body content will go... ] -->
 
@@ -40,7 +60,7 @@
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
      </button>
-        <a class="navbar-brand" href="#">Home</a>
+        <a class="navbar-brand" href="index.html">Home</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -68,15 +88,15 @@
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Login/Create Account</a></li>
+          <li><a href="login.html">Login/Create Account</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Information</a></li>
-              <li><a href="#">Saved Locations</a></li>
-              <li><a href="#">Saved Orders</a></li>
+              <li><a href="information.html">Information</a></li>
+              <li><a href="locations.html">Saved Locations</a></li>
+              <li><a href="saved.html">Saved Orders</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Settings</a></li>
+              <li><a href="settings.html">Settings</a></li>
             </ul>
           </li>
         </ul>
@@ -87,9 +107,11 @@
   </nav>
 
 
-  <div class="container">
+  <div class="container" id="login_div1">
     <div class="row">
-      <div class="col-sm-12 col-md-5">
+
+      <div class="col-sm-12 col-md-4">
+        <h3>Login</h3>
         <form>
           <div class="form-group">
             <label for="exampleInputUsername1">Username</label>
@@ -105,10 +127,26 @@
 
         </form>
       </div>
+      <div class="col-sm-12 col-md-4">
+      </div>
+      <div class="col-sm-12 col-md-4">
+        <form>
+          <h3>Create Account</h3>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputUsername2">Username</label>
+            <input type="Username" class="form-control" id="exampleInputUsername2" placeholder="Username">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword2">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
 
-      <div class="col-sm-12 col-md-7">
-
-
+        </form>
       </div>
     </div>
     </div? <!-- jQuery Javascript Library (required by Bootstrap) -->
