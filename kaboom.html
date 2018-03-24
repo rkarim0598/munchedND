@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <!-- Metadata for the Webpage -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
+
+  <!-- Bootstrap CSS files-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery UI CSS (optional) -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+  <!-- Google Open Sans web font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
+
+  <!-- Font Awesome Web Icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+  <!-- [ This is where your body content will go... ] -->
+  hi<br> netID:
+  <br>
+  <input type="text" id="netID" placeholder="mj23"><br> Password:
+  <br>
+  <input type="text" id="pw" placeholder="GOAT">
+  <button id="button1">Submit</button><br>
+
+  Create account<br>
+  netID <br>
+  <input type="text" id="newnetID" placeholder="netID"><br>
+
+  Password:<br>
+  <input type="text" id="pass1" placeholder="password"> <br>
+
+  Verify password:<br>
+  <input type="text" id="pass2" placeholder="password"> <br>
+
+  <button id="button2">Eat</button><br>
+
+
+  <script type="text/javascript">
+    var obj = {
+      "rmcinty3": "password",
+      "rkarim": "a4b8c145",
+      "cwall": "ha3kl",
+      "kdigiorn": "dks92k"
+    };
+    document.getElementById("button1").onclick = function() {
+      submit();
+    };
+
+    document.getElementById("button2").onclick = function() {
+      checkPassword();
+    }
+
+    function submit() { // gets value from netID and pw textbox and checks if valid
+      var netID = document.getElementById("netID").value;
+      var pw = document.getElementById("pw").value;
+      checkUser(netID, pw);
+    }
+
+
+    function checkUser(netID, pw) { // check if user exists/password is correct
+      if (netID in obj) {
+        if (obj[netID] == pw)
+          alert("Congratulations");
+        else {
+          alert("Incorrect netID or password");
+        }
+      } else {
+        alert("Incorrect netID or password");
+      }
+    }
+
+    function checkPassword() { // check if two passwords match
+      // if (document.getElementById("newnetID")
+      var idexists = document.getElementById("newnetID").value;
+      var pass1 = document.getElementById("pass1").value;
+      var pass2 = document.getElementById("pass2").value;
+
+      if (idexists != "") {
+          if (pass1 === pass2)
+            obj[idexists] = pass1;
+          else {
+            alert("Passwords don't match");
+          }
+      }
+      else {
+        alert("Please fill in netID field.")
+      }
+    }
+  </script>
+
+  <script type="text/javascript">
+    <!-- jQuery Javascript Library (required by Bootstrap) -->
+    <
+    script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" >
+  </script>
+
+  <!-- jQuery UI Library (optional) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <!-- Bootstrap Library -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
