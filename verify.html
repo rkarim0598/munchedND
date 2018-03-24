@@ -11,45 +11,6 @@
 
 	<!-- Bootstrap CSS files-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
-	<link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
-
-	<!-- Login status and info -->
-	<script type="text/javascript" src="login.js"></script>
-
-	<style>
-		body {
-			background: url(bg.svg) #39403D no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-		}
-
-		#our_jumbo {
-			opacity: 0.7;
-		}
-
-		#About_P {
-			font-size: 60px;
-			font-family: "Kalam";
-		}
-
-		#About_Text {
-			font-size: 35px;
-			font-family: "Kalam"
-		}
-
-		#About_ID {
-			margin-left: 7%;
-			margin-right: 7%;
-			width: 90%;
-		}
-
-		h1 {
-			font-family: "Dekko";
-		}
-	</style>
 
 	<!-- jQuery UI CSS (optional) -->
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
@@ -76,14 +37,13 @@
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
      </button>
-				<a class="navbar-brand" href="index.html">Home</a>
-				<!--<a href="login.html" class="navbar-brand">Order Now</a>-->
+				<a class="navbar-brand" href="#">Home</a>
 			</div>
 
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="order.html">Order Now <span class="sr-only">(current)</span></a></li>
+					<!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
 					<!-- <li><a href="#">Link</a></li> -->
 					<!-- <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -100,20 +60,20 @@
 				</ul>
 				<form class="navbar-form navbar-left">
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Good Food">
+						<input type="text" class="form-control" placeholder="Search">
 					</div>
-					<button type="submit" class="btn btn-default">Search</button>
+					<button type="submit" class="btn btn-default">Submit</button>
 				</form>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="login.html">Login/Create Account</a></li>
+					<li><a href="#">Login/Create Account</a></li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="information.html">Information</a></li>
-							<li><a href="locations.html">Saved Locations</a></li>
-							<li><a href="saved_orders.html">Saved Orders</a></li>
+							<li><a href="#">Information</a></li>
+							<li><a href="#">Saved Locations</a></li>
+							<li><a href="#">Saved Orders</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="settings.html">Settings</a></li>
+							<li><a href="#">Settings</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -123,27 +83,13 @@
 		<!-- /.container-fluid -->
 	</nav>
 
-	<div class="jumbotron" id="our_jumbo">
+	<div class="jumbotron">
 		<div class="container">
-			<h1>Hungry, but too busy?</h1>
-			<p>Have someone get your food for you!</p>
-			<p><a class="btn btn-primary btn-lg" href="#" role="button">Order Now!</a></p>
+			<h1>Hello, world!</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+			<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 		</div>
 	</div>
-	<div class="container" id="About_ID">
-		<p id="About_P">About Us</p>
-		<p id="About_Text">munched is a community delivery service for students by students. Our mission is to create a service that allows students access to food from different restaurants across campus without leaving their dorm.</p>
-	</div>
-
-
-	<script type="text/javascript">
-		var rmcinty3 = false;
-		if (loggedin) {
-			if (user = "rmcinty3") {
-				rmcinty3 = true;
-			}
-		}
-	</script>
 
 
 
