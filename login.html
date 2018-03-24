@@ -122,7 +122,7 @@
           </div>
 
 
-          <button id="Login" type="Login" class="btn btn-default">Login</button>
+          <button id="Login" type="button" class="btn btn-default">Login</button>
 
         </form>
       </div>
@@ -151,69 +151,10 @@
             <label for="exampleInputVPassword">Verify Password</label>
             <input type="password" class="form-control" id="pass2" placeholder="Password">
           </div>
-          <button type="Create_Account" class="btn btn-default" id="Create" >Create Account</button>
+          <button type="button" class="btn btn-default" id="Create" >Create Account</button>
         </form>
       </div>
-      <script type="text/javascript">
-        var obj = {
-          "rmcinty3": "password",
-          "rkarim": "a4b8c145",
-          "cwall": "ha3kdl",
-          "kdigiorn": "dks92k"
-        };
-        document.getElementById("Login").addEventListener("click", function() {
-          login();
-        });
-
-        document.getElementById("Create").addEventListener("click", function() {
-          checkPassword();
-        });
-
-        function login() { // gets value from netID and pw textbox and checks if valid
-          var netID = document.getElementById("netID").value;
-          var pw = document.getElementById("pw").value;
-          alert("netid: " + netID + " pass: " + pw);
-          checkUser(netID, pw);
-        }
-
-
-        function checkUser(netID, pw) { // check if user exists/password is correct
-          if (netID in obj) {
-            if (obj[netID] == pw) {
-              alert("Congratulations");
-            }
-            else {
-              alert("Incorrect netID or password 1");
-            }
-          } else {
-            alert("Incorrect netID or password 2");
-          }
-        }
-
-        function checkPassword() { // check if two passwords match
-          // if (document.getElementById("newnetID")
-          var id = document.getElementById("newnetid").value;
-          var pass1 = document.getElementById("pass1").value;
-          var pass2 = document.getElementById("pass2").value;
-          var email = document.getElementById("newemail").value;
-          var phone = document.getElementById("newphone").value;
-
-          if (id != "" && email != "" && phone != "" && pass1.length >= 6) {
-            if (pass1 == pass2) {
-              obj[id] = pass1;
-              alert(obj[id]);
-              //var accum = "";
-              //for (key in obj)
-              //  accum += key + " " + obj[key] + "<br>";
-              //alert(accum);
-            } else {
-              alert("Passwords don't match");
-            }
-          } else {
-            alert("Please fill in netID field.")
-          }
-        }
-      </script>
+      <script type="text/javascript" src="login.js"></script>
     </div>
 
 
