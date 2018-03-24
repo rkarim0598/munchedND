@@ -11,27 +11,45 @@
 
   <!-- Bootstrap CSS files-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+
+
   <style>
-    #login_div1 {
-      margin-left: 1%;
-      margin-right: 1%;
-      width: 97.5%;
+    body {
+      background: url(bg.svg) #39403D no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     }
 
-    /*.our_background {
-      z-index: -1;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    } */
+    #our_jumbo {
+      opacity: 0.7;
+    }
 
-    body {
-      /*background-color: rgba(137, 173, 203);*/
-        background: url(bg.svg) #39403D no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+    #Warning_P {
+      font-size: 60px;
+      font-family: "Kalam";
+    }
+
+    #Warning_Text {
+      font-size: 35px;
+      font-family: "Kalam"
+    }
+
+    #Warning_ID {
+      /*margin-left: 7%;
+      margin-right: 7%;*/
+      width: 100%;
+      text-align: center;
+      margin-top: 18%;
+    }
+    a{
+      color: black;
+    }
+    h1 {
+      font-family: "Dekko";
     }
   </style>
 
@@ -48,6 +66,8 @@
 
 <body>
 
+  <!-- [ This is where your body content will go... ] -->
+
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -59,13 +79,13 @@
        <span class="icon-bar"></span>
      </button>
         <a class="navbar-brand" href="index.html">Home</a>
+        <!--<a href="login.html" class="navbar-brand">Order Now</a>-->
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class="active"><a href="order.html">Order Now <span class="sr-only">(current)</span></a></li>
-          <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
           <!-- <li><a href="#">Link</a></li> -->
           <!-- <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -84,7 +104,7 @@
           <div class="form-group">
             <input type="text" class="form-control" placeholder="Good Food">
           </div>
-          <button type="submit" class="btn btn-default">Submit</button>
+          <button type="submit" class="btn btn-default">Search</button>
         </form>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="login.html">Login/Create Account</a></li>
@@ -105,65 +125,21 @@
     <!-- /.container-fluid -->
   </nav>
 
-
-  <div class="container" id="login_div1">
-    <div class="row">
-
-      <div class="col-sm-12 col-md-4">
-        <h3>Login</h3>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputUsername1">Username</label>
-            <input type="Username" class="form-control" id="exampleInputUsername1" placeholder="Username">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-          </div>
+  <div class="container" id="Warning_ID">
+    <p id="Warning_P">Please Log In</p>
+    <p id="Warning_Text">You must be logged in to order food</p>
+    <a href="login.html">Login/Create Account</a>
+  </div>
 
 
-          <button id="Login" type="Login" class="btn btn-default">Login</button>
+  <!-- jQuery Javascript Library (required by Bootstrap) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        </form>
-      </div>
-      <div class="col-sm-12 col-md-4">
-      </div>
-      <div class="col-sm-12 col-md-4">
-        <form>
-          <h3>Create Account</h3>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPhone">Phone Number</label>
-            <input type="email" class="form-control" id="exampleInputPhone" placeholder="(555) 555-5555">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputUsername2">Username</label>
-            <input type="Username" class="form-control" id="exampleInputUsername2" placeholder="Username">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword2">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputVPassword">Verify Password</label>
-            <input type="email" class="form-control" id="exampleInputVPassword" placeholder="Password">
-          </div>
-          <button id="Create_Account" type="Create_Account" class="btn btn-default">Create Account</button>
+  <!-- jQuery UI Library (optional) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-        </form>
-      </div>
-    </div>
-    </div? <!-- jQuery Javascript Library (required by Bootstrap) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- jQuery UI Library (optional) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-
-    <!-- Bootstrap Library -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- Bootstrap Library -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
 
