@@ -1,5 +1,3 @@
-var loggedin = true;
-var user = "rmcinty3";
 var obj = {
   "rmcinty3": {
     "password": "password",
@@ -22,6 +20,9 @@ var obj = {
     "phone": "2392167016"
   }
 };
+var loggedin;
+var user = "rmcinty3";
+
 document.getElementById("Login").addEventListener("click", function() {
   login();
 });
@@ -61,11 +62,19 @@ function checkPassword() { // check if two passwords match
 
   if (id != "" && email != "" && phone != "" && pass1.length >= 6) {
     if (pass1 == pass2) {
-      obj[id] = pass1;
+      if (!(id in obj)) {
+				obj[id] = {"password":pass1,
+										"email":email,
+										"phone":phone};
+				alert("Account created!");
+			}
+			else {alert("netID " + id + " already has an account");}
     } else {
       alert("Passwords don't match");
     }
-  } else {
-    alert("Please fill in netID field.")
+  } else if (pass1.length < 6) {
+		alert("Please choose a password 6 characters long.");
+	} else {
+    alert("Missing a field.")
   }
 }
