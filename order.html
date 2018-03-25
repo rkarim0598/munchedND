@@ -83,12 +83,6 @@
             </ul> -->
 					<!-- </li> -->
 				</ul>
-				<form class="navbar-form navbar-left">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Good Food">
-					</div>
-					<button type="submit" class="btn btn-default">Search</button>
-				</form>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="login.html" id="LoginCreateAccount">Login/Create Account</a></li>
 					<li class="dropdown">
@@ -236,7 +230,7 @@
 					<div class="panel-body">
 						<div class="row">
 							<form action="/action_page.php" method="get">
-								<div class="col-sm-6 col-md-3">
+								<div class="col-sm-6 col-md-4">
 									<h4> SmashBurger </h4>
 									<input type="radio" name="smash" value="classic_smash" id="class_smash"> Classic Smash<br>
 									<input type="radio" name="smash" value="bacon_cheese" id="bacon_cheese"> Bacon Cheeseburger<br>
@@ -244,19 +238,21 @@
 									<input type="radio" name="smash" value="truffle_b" id="truffle_b"> Truffle Mushroom Swiss<br>
 									<input type="radio" name="smash" value="spicy" id="spicy"> Spicy Jalepe&ntilde;o BBQ<br><br>
 								</div>
-								<div class="col-sm-6 col-md-3">
+								<div class="col-sm-6 col-md-4">
 									<h4> SmashChicken </h4>
 									<input type="radio" name="smash" value="classic_c" id="classic_C"> Classic Chicken<br>
 									<input type="radio" name="smash" value="bacon_avocado_c" id="bacon_avocado_c"> Bacon Avocado Club<br>
 									<input type="radio" name="smash" value="truffle_c" id="truffle_c"> Truffle Mushroom Swiss<br><br>
 								</div>
-								<div class="col-sm-6 col-md-3">
+								<div class="col-sm-6 col-md-4">
 									<h4> Fresh Salads </h4>
 									<form action="/action_page.php" method="get">
 										<input type="radio" name="smash" value="harvest" id="harvest"> Harvest<br>
 										<input type="radio" name="smash" value="cobb" id="cobb"> Classic Cobb<br><br>
 								</div>
-								<div class="col-sm-6 col-md-3">
+							</div>
+							<div class="row">
+								<div class="col-sm-6 col-md-4">
 									<h4> Fries and Sides </h4>
 									<input type="radio" name="smash" value="tots" id="tots"> Tots<br>
 									<input type="radio" name="smash" value="smashtots" id="smashtots"> SmashTots<br>
@@ -264,12 +260,12 @@
 									<input type="radio" name="smash" value="smashfries" id="smashfires"> Smashfries<br>
 									<input type="radio" name="smash" value="sweet_potato" id="sweet_potato"> Sweet Potato Fries<br><br>
 								</div>
-								<div class="col-sm-6 col-md-3">
+								<div class="col-sm-6 col-md-4">
 									<h4> Other Entrees </h4>
 									<input type="radio" name="smash" value="ranch" id="ranch"> Avocado Ranch Black Bean Burger<br>
 									<input type="radio" name="smash" value="strips" id="strips"> Chicken Strips<br><br>
 								</div>
-								<div class="col-sm-6 col-md-3">
+								<div class="col-sm-6 col-md-4">
 									<h4> Shakes </h4>
 									<input type="radio" name="smash" value="chocolate" id="chocolate"> Chocolate<br>
 									<input type="radio" name="smash" value="vanilla" id="vanilla"> Vanilla<br>
@@ -337,67 +333,73 @@
 									<input type="radio" name="taco" value="cheese_quesadilla" id="cheese_quesadilla"> Cheese Quesadilla<br>
 									<input type="radio" name="taco" value="cheesy_fiesta" id="cheesy_fiesta"> Cheesy Fiesta Potatoes<br><br>
 								</div>
-								<div class="col-sm-6 col-md-3">
-									<h4> Nachos </h4>
-									<input type="radio" name="taco" value="nachos_s" id="nachos_s"> Nachos Supreme<br>
-									<input type="radio" name="taco" value="beli" id="beli"> Nachos BeliGrande<br><br>
-								</div>
-								<div class="col-sm-6 col-md-3">
-									<h4> Quesarito </h4>
-									<input type="radio" name="taco" value="seasoned_q" id="seasoned_q"> Seasoned Beef Quesarito<br>
-									<input type="radio" name="taco" value="shredded_q" id="shredded_q"> Shredded Chicken Quesarito<br>
-									<input type="radio" name="taco" value="steak_q" id="steak_q"> Steak Quesarito<br><br>
-								</div>
-								<div class="col-sm-6 col-md-3">
-									<h4> Power Menu </h4>
-									<input type="radio" name="taco" value="bowl_p" id="bowl_p"> Bowl<br>
-									<input type="radio" name="taco" value="burrito_p" id="burrito_p"> Burrito<br><br>
-								</div>
-								<div class="col-sm-6 col-md-3">
-									<h4> Snacks and Desserts </h4>
-									<input type="radio" name="taco" value="chipotle_l" id="chipotle_l"> Chipotle Chicken Loaded Griller<br>
-									<input type="radio" name="taco" value="cheesy_l" id="cheesy_l"> Cheesy Potato Loaded Griller<br>
-									<input type="radio" name="taco" value="beefy_l" id="beefy_l"> Beefy Nacho Loaded Griller<br>
-									<input type="radio" name="taco" value="cinnabon" id="cinnabon"> Cinnabon Delights<br><br>
-								</div>
-								<div class="col-sm-6 col-md-3">
-									<h4> Combos </h4>
-									<input type="radio" name="taco" value="burrito_combo" id="burrito_combo"> Burrito Supreme<br>
-									<input type="radio" name="taco" value="xxl_combo" id="xxl_combo"> XXL Grilled Stuft Burrito<br>
-									<input type="radio" name="taco" value="beli_combo" id="beli_combo"> Nachos BeliGrande<br>
-									<input type="radio" name="taco" value="chalupas_combo" id="chalupas_combo"> Chalupas Supreme<br>
-									<input type="radio" name="taco" value="crunchwrap_combo" id="crunchwrap_combo"> Crunchwrap Supreme<br>
-									<input type="radio" name="taco" value="gordita_combo" id="gordita_combo"> Cheesy Gordita Crunch<br>
-									<input type="radio" name="taco" value="3s_combo" id="3s_combo"> 3 Tacos Supreme<br>
-									<input type="radio" name="taco" value="mexican_combo" id="mexican_combo"> Mexican Pizza<br>
-									<input type="radio" name="taco" value="quesadilla_combo" id="quesadilla_combo"> Quesadilla<br>
-									<input type="radio" name="taco" value="3d_combo" id="3d_combo"> 3 Doritos Tacos<br>
-									<input type="radio" name="taco" value="GRANDE" id="GRANDE"> GRANDE MEAL<br>
-									<input type="radio" name="taco" value="3_combo" id="3_combo"> 3 Tacos<br><br>
-								</div>
-								<div class="col-sm-6 col-md-3">
-									<h4> Pizza </h4>
-									<input type="radio" name="taco" value="supreme_p" id="supreme_p"> Supreme<br>
-									<input type="radio" name="taco" value="pepperoni_p" id="pepperoni_p"> Pepperoni<br>
-									<input type="radio" name="taco" value="cheese_p" id="cheese_p"> Cheese<br><br>
-								</div>
-								<div class="col-sm-6 col-md-3">
-									<h4> Pasta </h4>
-									<input type="radio" name="taco" value="chicken_a" id="chicken_a"> Chicken Alfredo<br>
-									<input type="radio" name="taco" value="meaty" id="meaty"> Meaty Marinara<br><br>
-								</div>
-								<div class="col-sm-6 col-md-3">
-									<h4> Snacks </h4>
-									<input type="radio" name="taco" value="breadsticks" id="breadsticks"> Breadsticks<br>
-									<input type="radio" name="taco" value="cheesesticks" id="cheesesticks"> Cheese Sticks<br>
-									<input type="radio" name="taco" value="cinnamonsticks" id="cinnamonsticks"> Cinnamon Sticks<br><br>
-								</div>
-								<div class="col-sm-6 col-md-3">
-									<h4> Baked Wings </h4>
-									<input type="radio" name="taco" value="6" id="6"> 6 Count<br>
-									<input type="radio" name="taco" value="12" id="12"> 12 Count<br><br>
-								</div>
-								</form>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 col-md-3">
+								<h4> Nachos </h4>
+								<input type="radio" name="taco" value="nachos_s" id="nachos_s"> Nachos Supreme<br>
+								<input type="radio" name="taco" value="beli" id="beli"> Nachos BeliGrande<br><br>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<h4> Quesarito </h4>
+								<input type="radio" name="taco" value="seasoned_q" id="seasoned_q"> Seasoned Beef Quesarito<br>
+								<input type="radio" name="taco" value="shredded_q" id="shredded_q"> Shredded Chicken Quesarito<br>
+								<input type="radio" name="taco" value="steak_q" id="steak_q"> Steak Quesarito<br><br>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<h4> Power Menu </h4>
+								<input type="radio" name="taco" value="bowl_p" id="bowl_p"> Bowl<br>
+								<input type="radio" name="taco" value="burrito_p" id="burrito_p"> Burrito<br><br>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<h4> Snacks and Desserts </h4>
+								<input type="radio" name="taco" value="chipotle_l" id="chipotle_l"> Chipotle Chicken Loaded Griller<br>
+								<input type="radio" name="taco" value="cheesy_l" id="cheesy_l"> Cheesy Potato Loaded Griller<br>
+								<input type="radio" name="taco" value="beefy_l" id="beefy_l"> Beefy Nacho Loaded Griller<br>
+								<input type="radio" name="taco" value="cinnabon" id="cinnabon"> Cinnabon Delights<br><br>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 col-md-3">
+								<h4> Combos </h4>
+								<input type="radio" name="taco" value="burrito_combo" id="burrito_combo"> Burrito Supreme<br>
+								<input type="radio" name="taco" value="xxl_combo" id="xxl_combo"> XXL Grilled Stuft Burrito<br>
+								<input type="radio" name="taco" value="beli_combo" id="beli_combo"> Nachos BeliGrande<br>
+								<input type="radio" name="taco" value="chalupas_combo" id="chalupas_combo"> Chalupas Supreme<br>
+								<input type="radio" name="taco" value="crunchwrap_combo" id="crunchwrap_combo"> Crunchwrap Supreme<br>
+								<input type="radio" name="taco" value="gordita_combo" id="gordita_combo"> Cheesy Gordita Crunch<br>
+								<input type="radio" name="taco" value="3s_combo" id="3s_combo"> 3 Tacos Supreme<br>
+								<input type="radio" name="taco" value="mexican_combo" id="mexican_combo"> Mexican Pizza<br>
+								<input type="radio" name="taco" value="quesadilla_combo" id="quesadilla_combo"> Quesadilla<br>
+								<input type="radio" name="taco" value="3d_combo" id="3d_combo"> 3 Doritos Tacos<br>
+								<input type="radio" name="taco" value="GRANDE" id="GRANDE"> GRANDE MEAL<br>
+								<input type="radio" name="taco" value="3_combo" id="3_combo"> 3 Tacos<br><br>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<h4> Pizza </h4>
+								<input type="radio" name="taco" value="supreme_p" id="supreme_p"> Supreme<br>
+								<input type="radio" name="taco" value="pepperoni_p" id="pepperoni_p"> Pepperoni<br>
+								<input type="radio" name="taco" value="cheese_p" id="cheese_p"> Cheese<br><br>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<h4> Pasta </h4>
+								<input type="radio" name="taco" value="chicken_a" id="chicken_a"> Chicken Alfredo<br>
+								<input type="radio" name="taco" value="meaty" id="meaty"> Meaty Marinara<br><br>
+							</div>
+							<div class="col-sm-6 col-md-3">
+								<h4> Snacks </h4>
+								<input type="radio" name="taco" value="breadsticks" id="breadsticks"> Breadsticks<br>
+								<input type="radio" name="taco" value="cheesesticks" id="cheesesticks"> Cheese Sticks<br>
+								<input type="radio" name="taco" value="cinnamonsticks" id="cinnamonsticks"> Cinnamon Sticks<br><br>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 col-md-12">
+								<h4> Baked Wings </h4>
+								<input type="radio" name="taco" value="6" id="6"> 6 Count<br>
+								<input type="radio" name="taco" value="12" id="12"> 12 Count<br><br>
+							</div>
+							</form>
 						</div>
 					</div>
 				</div>
