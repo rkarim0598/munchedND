@@ -98,6 +98,7 @@ function checkingstuff() {
     checkingextras();
     //alert("before constructorder");
     constructOrder();
+    total = total + shipcost;
     strtotal = "$" + total;
     alert("Your order: \n" + order + "\n\n" +
 	  "Delivery cost:  $" + shipcost + "\n" +
