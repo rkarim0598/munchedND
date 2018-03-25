@@ -39,9 +39,9 @@ function login() { // gets value from netID and pw textbox and checks if valid
 function checkUser(netID, pw) { // check if user exists/password is correct
   if (netID in obj) {
     if (obj[netID]["password"] == pw) {
-			localStorage.setItem('LoggedIn', true);
-			localStorage.setItem('User', netID);
-			alert("You are logged in.");
+			localStorage.LoggedIn = "TRUE";
+			localStorage.User = netID;
+			location.href = "index.html";
     } else {
       alert("Incorrect netID or password 1");
     }
