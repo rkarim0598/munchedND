@@ -87,7 +87,7 @@ var strtotal = "";
 var order = "";
 
 function checkingstuff() {
-    alert("start");
+    var shipcost = 5;
     
     for (i in alldastuff["Subway"]["Sandwiches"]) {
 	if (document.getElementById(i).checked) {
@@ -99,8 +99,10 @@ function checkingstuff() {
     //alert("before constructorder");
     constructOrder();
     strtotal = "$" + total;
-    alert("Your total price: " + strtotal + "\n" +
-	 "Your order: \n" + order + "\n");
+    alert("Your order: \n" + order + "\n\n" +
+	  "Delivery cost:  $" + shipcost + "\n" +
+          "-----------------------------------------------\n" +
+	  "Your total price:  " + strtotal );
 }
 
 function checkingextras() {
