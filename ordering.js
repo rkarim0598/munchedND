@@ -21,7 +21,6 @@ var alldastuff = {
 	    "deluxe": 2.00,
 	    "extra_cheese": 1.50,
 	    "bacon": 10.00,
-	    "pepperoni": 1.50,
 	    "guac": 25.00,
 	    "double": 1.50
 	}
@@ -43,4 +42,3 @@ function checkingstuff() {
     }
     alert("Total price is " + total);
 }
-
