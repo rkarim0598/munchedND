@@ -21,10 +21,7 @@ var alldastuff = {
 	    "deluxe": 2.00,
 	    "extra_cheese": 1.50,
 	    "bacon": 10.00,
-<<<<<<< HEAD
-=======
 	    //"pepperoni": 1.50,
->>>>>>> 0db216be310703ff077e7c067e35f7bf5a8bed25
 	    "guac": 25.00,
 	    "double": 1.50
 	},
@@ -93,7 +90,7 @@ var shipcost = 5;
 
 function checkingstuff() {
     //var shipcost = 5;
-    
+
     for (i in alldastuff["Subway"]["Sandwiches"]) {
 	if (document.getElementById(i).checked) {
 	    total = total + alldastuff["Subway"]["Sandwiches"][i];
@@ -104,7 +101,7 @@ function checkingstuff() {
     //alert("before constructorder");
     constructOrder();
     //total = total + shipcost;
-    
+
     if (total != 0) {
 	strtotal = "$" + total;
 	ordered = 1;
@@ -139,8 +136,6 @@ function checkingextras() {
     	}
     }
 }
-<<<<<<< HEAD
-=======
 
 function constructOrder() {
     //alert("hi");
@@ -181,9 +176,8 @@ function constructOrder() {
     }
 */
 }
-	/*			 
+	/*
 	    if (document.getElementById(currid).checked) {
-		
+
 		alert(document.getElementById(currid).getClass() + ": " + document.getElementById(currid).value + '\n');
 */
->>>>>>> 0db216be310703ff077e7c067e35f7bf5a8bed25
