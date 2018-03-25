@@ -20,9 +20,7 @@ var obj = {
     "phone": "2392167016"
   }
 };
-var loggedin;
-var user = "rmcinty3";
-
+/*
 document.getElementById("Login").addEventListener("click", function() {
   login();
 });
@@ -30,7 +28,7 @@ document.getElementById("Login").addEventListener("click", function() {
 document.getElementById("Create").addEventListener("click", function() {
   checkPassword();
 });
-
+*/
 function login() { // gets value from netID and pw textbox and checks if valid
   var netID = document.getElementById("netID").value;
   var pw = document.getElementById("pw").value;
@@ -41,9 +39,9 @@ function login() { // gets value from netID and pw textbox and checks if valid
 function checkUser(netID, pw) { // check if user exists/password is correct
   if (netID in obj) {
     if (obj[netID]["password"] == pw) {
-      alert("You are logged in.");
-			user = obj[netID];
-      loggedin = true;
+			localStorage.setItem('LoggedIn', true);
+			localStorage.setItem('User', netID);
+			alert("You are logged in.");
     } else {
       alert("Incorrect netID or password 1");
     }
