@@ -4,7 +4,6 @@ if (!localStorage.User)
 if (!localStorage.LoggedIn)
 	localStorage.setItem("LoggedIn", "FALSE");
 
-
 if (localStorage.getItem("LoggedIn") == "TRUE") {
 	document.getElementById("LoginCreateAccount").href = "index.html";
 	document.getElementById("LoginCreateAccount").innerHTML = localStorage.getItem('User');
