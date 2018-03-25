@@ -3,30 +3,42 @@
 
 <head>
 
-	<!-- Metadata for the Webpage -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Title</title>
+  <!-- Metadata for the Webpage -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
 
-	<!-- Bootstrap CSS files-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Bootstrap CSS files-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script type="text/javascript" src="login.js"></script>
+  <style>
+    #login_div1 {
+      margin-left: 1%;
+      margin-right: 1%;
+      width: 97.5%;
+    }
 
-	<script type="text/javascript" src="login.js"></script>
+    #tab {
+      margin-left: 10%;
+      margin-right: 25%;
+    }
 
-	<style>
-		#login_div1 {
-			margin-left: 1%;
-			margin-right: 1%;
-			width: 97.5%;
-		}
+    #grub {
+      margin-left: 12%;
+      width: 30%;
+    }
 
-		#tab {
-			margin-left: 50%;
-			width: 80%;
-		}
+    #grub_text {
+       font-size: 44px;
+    }
 
-		/*.our_background {
+    #body_login {
+      width: 100%;
+      height: 100%;
+    }
+
+    /*.our_background {
       z-index: -1;
       position: absolute;
       width: 100%;
@@ -86,117 +98,115 @@
               <li role="separator" class="divider"></li>
               <li><a href="#">One more separated link</a></li>
             </ul> -->
-					<!-- </li> -->
-				</ul>
-				<form class="navbar-form navbar-left">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Good Food">
-					</div>
-					<button type="submit" class="btn btn-default">Submit</button>
-				</form>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="login.html">Login/Create Account</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="information.html">Information</a></li>
-							<li><a href="locations.html">Saved Locations</a></li>
-							<li><a href="saved_orders.html">Saved Orders</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="settings.html">Settings</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
-	</nav>
+          <!-- </li> -->
+        </ul>
+        <form class="navbar-form navbar-left">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Good Food">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login.html">Login/Create Account</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="information.html">Information</a></li>
+              <li><a href="locations.html">Saved Locations</a></li>
+              <li><a href="saved_orders.html">Saved Orders</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="settings.html">Settings</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <div id="body_login">
+    <div class="row">
+      <div class="col-sm-8">
+        <div id="grub">
+          <p class="lead" id="grub_text">Need to Grub?</p>
+          <p class="lead" id="grub_text1">Sign in or create an account in order to take advantage of the munched delivery system.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div id="tab">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#login" aria-controls="home" role="tab" data-toggle="tab">Login</a></li>
+            <li role="presentation"><a href="#create" aria-controls="profile" role="tab" data-toggle="tab">Create an Account</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="login">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputUsername1">netID</label>
+                  <input type="Username" class="form-control" id="netID" placeholder="netID">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="pw" placeholder="Password">
+                </div>
+
+                <button id="Login" type="button" class="btn btn-default" onclick="login()">Login</button>
+
+              </form>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="create">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="newemail" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPhone">Phone Number</label>
+                <input type="tel" class="form-control" id="newphone" placeholder="(555) 555-5555">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputUsername2">netID</label>
+                <input type="Username" class="form-control" id="newnetid" placeholder="netID">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword2">Password</label>
+                <input type="password" class="form-control" id="pass1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputVPassword">Verify Password</label>
+                <input type="password" class="form-control" id="pass2" placeholder="Password">
+              </div>
+              <button type="button" class="btn btn-default" id="Create" onclick="checkPassword()">Create Account</button>
+              </form>
+            </div>
+          </div>
+
+        </div>
 
 
-	<div class="container">
-
-		<div class="row">
-
-			<div class="col-sm-8">
-				<p class="lead">Need to Grub?</p>
-			</div>
-			<div class="col-sm-4">
-
-				<div class="container" id=tab>
-					<!-- Nav tabs -->
-					<ul class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active"><a href="#login" aria-controls="home" role="tab" data-toggle="tab">Login</a></li>
-						<li role="presentation"><a href="#create" aria-controls="profile" role="tab" data-toggle="tab">Create an Account</a></li>
-					</ul>
-
-					<!-- Tab panes -->
-					<div class="tab-content">
-						<div role="tabpanel" class="tab-pane active" id="login">
-							<form>
-								<div class="form-group">
-									<label for="exampleInputUsername1">netID</label>
-									<input type="Username" class="form-control" id="netID" placeholder="netID">
-								</div>
-								<div class="form-group">
-									<label for="exampleInputPassword1">Password</label>
-									<input type="password" class="form-control" id="pw" placeholder="Password">
-								</div>
+      </div>
+    </div>
 
 
-								<button id="Login" type="button" class="btn btn-default" onclick="login()">Login</button>
+  </div>
 
-							</form>
-						</div>
-						<div role="tabpanel" class="tab-pane" id="create">
-							<div class="form-group">
-								<label for="exampleInputEmail1">Email address</label>
-								<input type="email" class="form-control" id="newemail" placeholder="Email">
-							</div>
-							<div class="form-group">
-								<label for="exampleInputPhone">Phone Number</label>
-								<input type="tel" class="form-control" id="newphone" placeholder="(555) 555-5555">
-							</div>
-							<div class="form-group">
-								<label for="exampleInputUsername2">netID</label>
-								<input type="Username" class="form-control" id="newnetid" placeholder="netID">
-							</div>
-							<div class="form-group">
-								<label for="exampleInputPassword2">Password</label>
-								<input type="password" class="form-control" id="pass1" placeholder="Password">
-							</div>
-							<div class="form-group">
-								<label for="exampleInputVPassword">Verify Password</label>
-								<input type="password" class="form-control" id="pass2" placeholder="Password">
-							</div>
-							<button type="button" class="btn btn-default" id="Create" onclick="checkPassword()">Create Account</button>
-							</form>
-						</div>
-					</div>
-
-				</div>
-
-
-
-			</div>
-
-
-		</div>
-
-	</div>
+  </div>
 
 
 
-	</div>
-	<!-- jQuery Javascript Library (required by Bootstrap) -->
+  </div>
+  <!-- jQuery Javascript Library (required by Bootstrap) -->
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<!-- jQuery UI Library (optional) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!-- jQuery UI Library (optional) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-	<!-- Bootstrap Library -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- Bootstrap Library -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
 
