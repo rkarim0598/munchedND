@@ -3,74 +3,73 @@
 
 <head>
 
-	<!-- Metadata for the Webpage -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Title</title>
+   <!-- Metadata for the Webpage -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Title</title>
 
-	<!-- Bootstrap CSS files-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
-	<link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+   <!-- Bootstrap CSS files-->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+   <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
 
 
-	<style>
-		body {
-			background: url(bg.svg) #39403D no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
-		}
+   <style>
+      body {
+         background: url(bg.svg) #39403D no-repeat center center fixed;
+         -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;
+      }
 
-		#accordion {
-			margin-right: 10%;
-			opacity: 0.9;
-			margin-left: 10%;
-		}
+      #jumbo {
+         opacity: 0.9;
+      }
 
-		#Wrapper {
-			width: 100%;
-		}
-	</style>
+      #paragraph {
+         margin-top: 5%;
+      }
+      }
+   </style>
 
-	<!-- jQuery UI CSS (optional) -->
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+   <!-- jQuery UI CSS (optional) -->
+   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
-	<!-- Google Open Sans web font -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
+   <!-- Google Open Sans web font -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
 
-	<!-- Font Awesome Web Icons -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- Font Awesome Web Icons -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-	<script type="text/javascript" src="ordering.js"></script>
-	<!-- [ This is where your body content will go... ] -->
+   <script type="text/javascript" src="ordering.js"></script>
+   <!-- [ This is where your body content will go... ] -->
 
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+   <nav class="navbar navbar-default">
+      <div class="container-fluid">
+         <!-- Brand and toggle get grouped for better mobile display -->
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
        <span class="sr-only">Toggle navigation</span>
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
        <span class="icon-bar"></span>
      </button>
-				<a class="navbar-brand" href="index.html">munched</a>
-				<!--<a href="login.html" class="navbar-brand">Order Now</a>-->
-			</div>
+            <a class="navbar-brand" href="index.html">munched</a>
+            <!--<a href="login.html" class="navbar-brand">Order Now</a>-->
+         </div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li class="inactive"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
-					<li class="active"><a href="order.html" id="NavBarOrder">Order Now <span class="sr-only">(current)</span></a></li>
-					<!-- <li><a href="#">Link</a></li> -->
-					<!-- <li class="dropdown">
+         <!-- Collect the nav links, forms, and other content for toggling -->
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+               <li class="inactive"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+               <li class="active"><a href="order.html" id="NavBarOrder">Order Now <span class="sr-only">(current)</span></a></li>
+               <!-- <li><a href="#">Link</a></li> -->
+               <!-- <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">Action</a></li>
@@ -81,474 +80,86 @@
               <li role="separator" class="divider"></li>
               <li><a href="#">One more separated link</a></li>
             </ul> -->
-					<!-- </li> -->
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="login.html" id="LoginCreateAccount">Login/Create Account</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="ProfileDropdown">Profile <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="information.html">Information</a></li>
-							<li><a href="locations.html">Saved Locations</a></li>
-							<li><a href="saved_orders.html">Saved Orders</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="settings.html">Settings</a></li>
-							<li><a href="login.html" id="Logout">Log Out</a></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
-	</nav>
-
-
-	<div id="Wrapper">
-		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-			<div class="panel panel-default">
-				<div class="panel-heading" role="tab" id="headingOne">
-					<h2 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Subway" aria-expanded="false" aria-controls="collapseOne">
-            Subway
-          </a>
-        </h2>
-				</div>
-				<div id="Subway" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-					<div class="panel-body">
-						<div class="row">
-							<div class="col-sm-6 col-md-2">
-								<h4> Type of Sandwich </h4>
-								<form action="/action_page.php" method="get">
-									<input type="radio" name="sandwich" value="Black Forest" id="forest"> Black Forest Ham<br>
-									<input type="radio" name="sandwich" value="Chick and Bacon Ranch" id="chicken_bacon"> Chick and Bacon Ranch Melt<br>
-									<input type="radio" name="sandwich" value="Cold Cut Combo" id="cold_cut"> Cold Cut Combo<br>
-									<input type="radio" name="sandwich" value="Italian B.M.T" id="bmt"> Italian B.M.T.<br>
-									<input type="radio" name="sandwich" value="Meatball Marinara" id="meatball"> Meatball Marinara<br>
-									<input type="radio" name="sandwich" value="Oven Roasted Chicken" id="roasted_c"> Oven Roasted Chicken<br>
-									<input type="radio" name="sandwich" value="Roast Beef" id="roast_beef"> Roast Beef<br>
-									<input type="radio" name="sandwich" value="Rotisserie-Style Chicken" id="rotisserie"> Rotisserie-Style Chicken<br>
-									<input type="radio" name="sandwich" value="Spicy Italian" id="spicy"> Spicy Italian<br>
-									<input type="radio" name="sandwich" value="Steak and Cheese" id="steak"> Steak and Cheese<br>
-									<input type="radio" name="sandwich" value="Subway Club" id="subway"> Subway Club<br>
-									<input type="radio" name="sandwich" value="Sweet Onion Chicken Teriyaki" id="sweet"> Sweet Onion Chicken Teriyaki<br>
-									<input type="radio" name="sandwich" value="Class Tuna" id="tuna"> Classic Tuna<br>
-									<input type="radio" name="sandwich" value="Turkey Breast" id="turkey"> Turkey Breast<br>
-									<input type="radio" name="sandwich" value="Veggie Delite" id="veggie"> Veggie Delite<br><br>
-								</form>
-							</div>
-							<div class="col-sm-6 col-md-2">
-								<h4> Bread </h4>
-								<form action="/action_page.php" method="get">
-									<input type="radio" name="bread" value="Italian" id="Italian"> Italian<br>
-									<input type="radio" name="bread" value="9-Grain Wheat" id="9-Grain"> 9-Grain Wheat<br>
-									<input type="radio" name="bread" value="Italian Herbs and Cheese" id="Herbs"> Italian Herbs and Cheese<br>
-									<input type="radio" name="bread" value="Flatbread" id="Flatbread"> Flatbread<br>
-									<input type="radio" name="bread" value="Monterey Bread" id="Monterey_Bread"> Monterey Cheddar<br>
-									<input type="radio" name="bread" value="Multi-Grain Flatbread" id="Multi"> Multi-Grain Flatbread<br><br>
-								</form>
-								<form action="/action_page.php" method="get">
-									<input type="radio" name="toast" value="Not toasted" id="not_toasted"> Not Toasted<br>
-									<input type="radio" name="toast" value="Toasted" id="toasted"> Toasted<br><br>
-								</form>
-							</div>
-							<div class="col-sm-6 col-md-2">
-								<h4> Cheese </h4>
-								<form action="/action_page.php" method="get">
-									<input type="checkbox" name="cheese" value="No cheese" id="no_cheese"> No Cheese<br>
-									<input type="checkbox" name="cheese" value="Cheddar" id="cheddar"> Cheddar<br>
-									<input type="checkbox" name="cheese" value="Monterey Cheese" id="Monterey_Cheese"> Monterey Cheddar<br>
-									<input type="checkbox" name="cheese" value="Pepper Jack" id="Pepper_Jack"> Pepper Jack<br>
-									<input type="checkbox" name="cheese" value="Provolone" id="Provolone"> Provolone<br>
-									<input type="checkbox" name="cheese" value="Shredded Mozzarella" id="Shredded_Mozzarella"> Shredded Mozzarella<br>
-									<input type="checkbox" name="cheese" value="American" id="American"> American<br><br>
-								</form>
-							</div>
-							<div class="col-sm-6 col-md-2">
-								<h4> Extras </h4>
-								<form action="/action_page.php" method="get">
-									<input type="checkbox" name="extras" value="Deluxe" id="deluxe"> Deluxe<br>
-									<input type="checkbox" name="extras" value="Extra cheese" id="extra_cheese"> Extra Cheese<br>
-									<input type="checkbox" name="extras" value="bacon" id="bacon"> Bacon<br>
-									<!-- <input type="checkbox" name="extras" value="pepperoni" id="pepporoni"> Pepperoni<br> -->
-									<input type="checkbox" name="extras" value="Guacamole" id="guac"> Guacamole<br>
-									<input type="checkbox" name="extras" value="Double Meat" id="double"> Double Meat<br><br>
-								</form>
-							</div>
-							<div class="col-sm-6 col-md-2">
-								<h4> Veggies </h4>
-								<form action="/action_page.php" method="get">
-									<input type="checkbox" name="veggies" value="Lettuce" id="lettuce"> Lettuce<br>
-									<input type="checkbox" name="veggies" value="Spinach" id="spinach"> Spinach<br>
-									<input type="checkbox" name="veggies" value="Tomatoes" id="tomatoes"> Tomatoes<br>
-									<input type="checkbox" name="veggies" value="Cucumbers" id="cucumbers"> Cucumbers<br>
-									<input type="checkbox" name="veggies" value="Pickles" id="pickles"> Pickles<br>
-									<input type="checkbox" name="veggies" value="Green peppers" id="green"> Green Peppers<br>
-									<input type="checkbox" name="veggies" value="Black olives" id="black"> Black Olives<br>
-									<input type="checkbox" name="veggies" value="Red onions" id="red"> Red Onions<br>
-									<input type="checkbox" name="veggies" value="Jalepenos" id="jalepenos"> Jalepe&ntilde;os<br>
-									<input type="checkbox" name="veggies" value="Banana" id="banana"> Banana Peppers<br><br>
-								</form>
-							</div>
-							<div class="col-sm-6 col-md-2">
-								<h4> Condiments </h4>
-								<form action="/action_page.php" method="get">
-									<input type="checkbox" name="condiments" value="Mayo" id="mayo"> Mayonnaise<br>
-									<input type="checkbox" name="condiments" value="Light mayo" id="light"> Light Mayonnaise<br>
-									<input type="checkbox" name="condiments" value="Yellow mustard" id="yellow"> Yellow Mustard<br>
-									<input type="checkbox" name="condiments" value="Honey mustard" id="honey"> Honey Mustard<br>
-									<input type="checkbox" name="condiments" value="Dell brown mustard" id="dell"> Dell Brown Mustard<br>
-									<input type="checkbox" name="condiments" value="Chipotle Southwest" id="chipotle"> Chipotle Southwest<br>
-									<input type="checkbox" name="condiments" value="Sweet Onion" id="sweet_onion"> Sweet Onion<br>
-									<input type="checkbox" name="condiments" value="Ranch" id="ranch"> Ranch<br>
-									<input type="checkbox" name="condiments" value="Oil" id="oil"> Oil<br>
-									<input type="checkbox" name="condiments" value="Red Wine Vinegar" id="wine"> Red Wine Vinegar<br>
-									<input type="checkbox" name="condiments" value="Creamy Sriracha" id="sriracha"> Creamy Sriracha<br>
-									<input type="checkbox" name="condiments" value="Vinegarette" id="vinegarette"> Vinegarette<br>
-									<input type="checkbox" name="condiments" value="Caesar" id="caesar"> Caesar<br>
-									<input type="checkbox" name="condiments" value="Thousand Island Dressing" id="thousand"> Thousand Island Dressing<br>
-									<input type="checkbox" name="condiments" value="Cranberry mustard sauce" id="cranberry"> Cranberry Mustard Sauce<br>
-									<input type="checkbox" name="condiments" value="Salt" id="salt"> Salt<br>
-									<input type="checkbox" name="condiments" value="Pepper" id="pepper"> Pepper<br>
-									<input type="checkbox" name="condiments" value="Oregano" id="oregano"> Oregano<br>
-									<input type="checkbox" name="condiments" value="Grated" id="grated"> Grated<br><br>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading" role="tab" id="headingTwo">
-					<h4 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#SmashBurger" aria-expanded="false" aria-controls="collapseTwo">
-            Smash Burger
-          </a>
-        </h4>
-				</div>
-				<div id="SmashBurger" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-					<div class="panel-body">
-						<div class="row">
-							<form action="/action_page.php" method="get">
-								<div class="col-sm-6 col-md-4">
-									<h4> SmashBurger </h4>
-									<input type="radio" name="smash" value="classic_smash" id="class_smash"> Classic Smash<br>
-									<input type="radio" name="smash" value="bacon_cheese" id="bacon_cheese"> Bacon Cheeseburger<br>
-									<input type="radio" name="smash" value="bacon_avocado_b" id="bacon_avocado_b"> Bacon Avocado Club<br>
-									<input type="radio" name="smash" value="truffle_b" id="truffle_b"> Truffle Mushroom Swiss<br>
-									<input type="radio" name="smash" value="spicy" id="spicy"> Spicy Jalepe&ntilde;o BBQ<br><br>
-								</div>
-								<div class="col-sm-6 col-md-4">
-									<h4> SmashChicken </h4>
-									<input type="radio" name="smash" value="classic_c" id="classic_C"> Classic Chicken<br>
-									<input type="radio" name="smash" value="bacon_avocado_c" id="bacon_avocado_c"> Bacon Avocado Club<br>
-									<input type="radio" name="smash" value="truffle_c" id="truffle_c"> Truffle Mushroom Swiss<br><br>
-								</div>
-								<div class="col-sm-6 col-md-4">
-									<h4> Fresh Salads </h4>
-									<form action="/action_page.php" method="get">
-										<input type="radio" name="smash" value="harvest" id="harvest"> Harvest<br>
-										<input type="radio" name="smash" value="cobb" id="cobb"> Classic Cobb<br><br>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-6 col-md-4">
-									<h4> Fries and Sides </h4>
-									<input type="radio" name="smash" value="tots" id="tots"> Tots<br>
-									<input type="radio" name="smash" value="smashtots" id="smashtots"> SmashTots<br>
-									<input type="radio" name="smash" value="french" id="french"> French Fries<br>
-									<input type="radio" name="smash" value="smashfries" id="smashfires"> Smashfries<br>
-									<input type="radio" name="smash" value="sweet_potato" id="sweet_potato"> Sweet Potato Fries<br><br>
-								</div>
-								<div class="col-sm-6 col-md-4">
-									<h4> Other Entrees </h4>
-									<input type="radio" name="smash" value="ranch" id="ranch"> Avocado Ranch Black Bean Burger<br>
-									<input type="radio" name="smash" value="strips" id="strips"> Chicken Strips<br><br>
-								</div>
-								<div class="col-sm-6 col-md-4">
-									<h4> Shakes </h4>
-									<input type="radio" name="smash" value="chocolate" id="chocolate"> Chocolate<br>
-									<input type="radio" name="smash" value="vanilla" id="vanilla"> Vanilla<br>
-									<input type="radio" name="smash" value="straw" id="straw"> Strawberry<br>
-									<input type="radio" name="smash" value="oreo" id="oreo"> Oreo<br><br>
-								</div>
-								</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading" role="tab" id="headingThree">
-					<h4 class="panel-title">
-          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#TacoBell" aria-expanded="false" aria-controls="collapseThree">
-            Taco Bell/Pizza Hut
-          </a>
-        </h4>
-				</div>
-				<div id="TacoBell" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-					<div class="panel-body">
-						<div class="row">
-							<form action="/action_page.php" method="get">
-								<div class="col-sm-6 col-md-3">
-									<h4> Cravings Menu </h4>
-									<input type="radio" name="taco" value="spicy_potato" id="spicy_loyola"> Spicy Potato Soft Taco<br>
-									<input type="radio" name="taco" value="spicy_tostado" id="spicy_tostado"> Spicy Tostado<br>
-									<input type="radio" name="taco" value="cheesy_bean" id="cheesy_bean"> Cheesy Bean and Rice Burrito<br>
-									<input type="radio" name="taco" value="cheesy_roll" id="cheesy_roll"> Cheesy Roll-Up<br>
-									<input type="radio" name="taco" value="triple" id="triple"> Triple Layer Nachos<br>
-									<input type="radio" name="taco" value="mini" id="mini"> Beefy Mini Quesadilla<br>
-									<input type="radio" name="taco" value="fritos" id="fritos"> Beefy FRITOS Burrito<br>
-									<input type="radio" name="taco" value="shredded" id="shredded"> Shredded Chicken Mini Quesadilla<br>
-									<input type="radio" name="taco" value="caramel" id="caramel"> Caramel Apple Empanada<br>
-									<input type="radio" name="taco" value="twists" id="twists"> Cinnamon Twists<br><br>
-								</div>
-								<div class="col-sm-6 col-md-3">
-									<h4> Tacos </h4>
-									<input type="radio" name="taco" value="doritos" id="doritos"> Doritos Locos Tacos<br>
-									<input type="radio" name="taco" value="crunchy" id="crunchy"> Crunchy Taco<br>
-									<input type="radio" name="taco" value="soft" id="soft"> Soft Taco<br>
-									<input type="radio" name="taco" value="12" id="12"> Taco 12 Pack<br>
-									<input type="radio" name="taco" value="decker" id="decker"> Double Decker Taco<br><br>
-								</div>
-								<div class="col-sm-6 col-md-3">
-									<h4> Burritos </h4>
-									<form action="/action_page.php" method="get">
-										<input type="radio" name="taco" value="supreme" id="supreme"> Burrito Supreme<br>
-										<input type="radio" name="taco" value="7" id="7"> 7-Layer Burrito<br>
-										<input type="radio" name="taco" value="5" id="5"> Beefy 5-Layer Burrito<br>
-										<input type="radio" name="taco" value="shredded_chicken" id="shredded_chicken"> Shredded Chicken Burrito<br>
-										<input type="radio" name="taco" value="cheesy_potato" id="cheesy_potato"> Cheesy Potato Burrito<br>
-										<input type="radio" name="taco" value="xxl" id="xxl"> XXL Grilled Stuft Burrito<br>
-										<input type="radio" name="taco" value="bean" id="bean"> Bean Burrito<br>
-										<input type="radio" name="taco" value="combo_b" id="combo_b"> Combo Burrito<br><br>
-								</div>
-								<div class="col-sm-6 col-md-3">
-									<h4> Specialties </h4>
-									<input type="radio" name="taco" value="crunchwrap" id="crunchwrap"> Crunchwrap Supreme<br>
-									<input type="radio" name="taco" value="chalupa" id="chalupa"> Chalupa Supreme<br>
-									<input type="radio" name="taco" value="fiesta" id="fiesta"> Fiesta Taco Salad<br>
-									<input type="radio" name="taco" value="mexican" id="mexican"> Mexican Pizza<br>
-									<input type="radio" name="taco" value="quesadilla" id="quesadilla"> quesadilla<br>
-									<input type="radio" name="taco" value="gordita" id="gordita"> Cheesy Gordita Crunch<br>
-									<input type="radio" name="taco" value="cheese_quesadilla" id="cheese_quesadilla"> Cheese Quesadilla<br>
-									<input type="radio" name="taco" value="cheesy_fiesta" id="cheesy_fiesta"> Cheesy Fiesta Potatoes<br><br>
-								</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6 col-md-3">
-								<h4> Nachos </h4>
-								<input type="radio" name="taco" value="nachos_s" id="nachos_s"> Nachos Supreme<br>
-								<input type="radio" name="taco" value="beli" id="beli"> Nachos BeliGrande<br><br>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<h4> Quesarito </h4>
-								<input type="radio" name="taco" value="seasoned_q" id="seasoned_q"> Seasoned Beef Quesarito<br>
-								<input type="radio" name="taco" value="shredded_q" id="shredded_q"> Shredded Chicken Quesarito<br>
-								<input type="radio" name="taco" value="steak_q" id="steak_q"> Steak Quesarito<br><br>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<h4> Power Menu </h4>
-								<input type="radio" name="taco" value="bowl_p" id="bowl_p"> Bowl<br>
-								<input type="radio" name="taco" value="burrito_p" id="burrito_p"> Burrito<br><br>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<h4> Snacks and Desserts </h4>
-								<input type="radio" name="taco" value="chipotle_l" id="chipotle_l"> Chipotle Chicken Loaded Griller<br>
-								<input type="radio" name="taco" value="cheesy_l" id="cheesy_l"> Cheesy Potato Loaded Griller<br>
-								<input type="radio" name="taco" value="beefy_l" id="beefy_l"> Beefy Nacho Loaded Griller<br>
-								<input type="radio" name="taco" value="cinnabon" id="cinnabon"> Cinnabon Delights<br><br>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6 col-md-3">
-								<h4> Combos </h4>
-								<input type="radio" name="taco" value="burrito_combo" id="burrito_combo"> Burrito Supreme<br>
-								<input type="radio" name="taco" value="xxl_combo" id="xxl_combo"> XXL Grilled Stuft Burrito<br>
-								<input type="radio" name="taco" value="beli_combo" id="beli_combo"> Nachos BeliGrande<br>
-								<input type="radio" name="taco" value="chalupas_combo" id="chalupas_combo"> Chalupas Supreme<br>
-								<input type="radio" name="taco" value="crunchwrap_combo" id="crunchwrap_combo"> Crunchwrap Supreme<br>
-								<input type="radio" name="taco" value="gordita_combo" id="gordita_combo"> Cheesy Gordita Crunch<br>
-								<input type="radio" name="taco" value="3s_combo" id="3s_combo"> 3 Tacos Supreme<br>
-								<input type="radio" name="taco" value="mexican_combo" id="mexican_combo"> Mexican Pizza<br>
-								<input type="radio" name="taco" value="quesadilla_combo" id="quesadilla_combo"> Quesadilla<br>
-								<input type="radio" name="taco" value="3d_combo" id="3d_combo"> 3 Doritos Tacos<br>
-								<input type="radio" name="taco" value="GRANDE" id="GRANDE"> GRANDE MEAL<br>
-								<input type="radio" name="taco" value="3_combo" id="3_combo"> 3 Tacos<br><br>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<h4> Pizza </h4>
-								<input type="radio" name="taco" value="supreme_p" id="supreme_p"> Supreme<br>
-								<input type="radio" name="taco" value="pepperoni_p" id="pepperoni_p"> Pepperoni<br>
-								<input type="radio" name="taco" value="cheese_p" id="cheese_p"> Cheese<br><br>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<h4> Pasta </h4>
-								<input type="radio" name="taco" value="chicken_a" id="chicken_a"> Chicken Alfredo<br>
-								<input type="radio" name="taco" value="meaty" id="meaty"> Meaty Marinara<br><br>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<h4> Snacks </h4>
-								<input type="radio" name="taco" value="breadsticks" id="breadsticks"> Breadsticks<br>
-								<input type="radio" name="taco" value="cheesesticks" id="cheesesticks"> Cheese Sticks<br>
-								<input type="radio" name="taco" value="cinnamonsticks" id="cinnamonsticks"> Cinnamon Sticks<br><br>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-6 col-md-12">
-								<h4> Baked Wings </h4>
-								<input type="radio" name="taco" value="6" id="6"> 6 Count<br>
-								<input type="radio" name="taco" value="12" id="12"> 12 Count<br><br>
-							</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingFour">
-          <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#Hagerty" aria-expanded="false" aria-controls="collapseFour">
-          Hagerty Family Cafe
-        </a>
-      </h4>
-        </div>
-        <div id="Hagerty" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-          <div class="panel-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-          </div>
-        </div>
-      </div> -->
-			<div class="panel panel-default">
-				<div class="panel-heading" role="tab" id="headingFive">
-					<h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#Modern" aria-expanded="false" aria-controls="collapseFive">
-          Modern Market
-        </a>
-      </h4>
-				</div>
-				<div id="Modern" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-					<div class="panel-body">
-						<div class="row">
-							<div class="col-sm-6 col-md-3">
-								<h4> Breakfast Sandwiches and Burritos </h4>
-								<form action="/action_page.php" method="get">
-									<input type="radio" name="burrito" value="rocket" id="rocket"> The Rocket<br>
-									<input type="radio" name="burrito" value="chipotle_bacon" id="chipotle_bacon"> Chipotle Bacon<br>
-									<input type="radio" name="burrito" value="maple" id="maple"> Maple Sausage<br>
-									<input type="radio" name="burrito" value="classic" id="classic"> Classic Sandwich<br>
-									<input type="radio" name="burrito" value="green_chili" id="green_chili"> Green Chili Burrito<br>
-									<input type="radio" name="burrito" value="chili_bacon" id="chili_bacon"> Chili Bacon Burrito<br><br>
-								</form>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<h4> Oatmeals </h4>
-								<form action="/action_page.php" method="get">
-									<input type="radio" name="oatmeal" value="peanut_butter" id="peanut_butter"> Peanut Butter Banana<br>
-									<input type="radio" name="oatmeal" value="basic" id="basic"> Basic Oatmeal<br>
-									<input type="radio" name="oatmeal" value="super" id="super"> Super Berry<br><br>
-								</form>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<h4> Avacado Toast </h4>
-								<form action="/action_page.php" method="get">
-									<input type="radio" name="Avacado" value="modern" id="modern"> Modern Avo Toast<br>
-								</form>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<h4> Brick Oven Pizza </h4>
-								<form action="/action_page.php" method="get">
-									<input type="radio" name="brick" value="m'rita" id="m'rita"> M'rita<br>
-									<input type="radio" name="brick" value="three" id="three"> Three Cheese<br>
-									<input type="radio" name="brick" value="pepe" id="pepe"> Pep&eacute;<br>
-									<input type="radio" name="brick" value="crimini" id="crimini"> Crimini Kale<br>
-									<input type="radio" name="brick" value="bacon_corn" id="bacon_corn"> Bacon Corn<br>
-									<input type="radio" name="brick" value="bbq" id="bbq"> BBQ<br>
-									<input type="radio" name="brick" value="sausage" id="sausage"> Sausage Pesto<br><br>
-								</form>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<h4> Soups </h4>
-								<form action="/action_page.php" method="get">
-									<input type="radio" name="soup" value="split" id="split"> Curry Split Pea<br>
-									<input type="radio" name="soup" value="green_chili_soup" id="green_chili_soup"> Green Chili<br>
-									<input type="radio" name="soup" value="tomato_basil" id="tomato_basil"> Tomato Basil<br><br>
-								</form>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<h4> Salads </h4>
-								<form action="/action_page.php" method="get">
-									<input type="radio" name="salads" value="thai" id="thai"> Thai Coconut<br>
-									<input type="radio" name="salads" value="farmer" id="farmer"> Farmer<br>
-									<input type="radio" name="salads" value="flat" id="flat"> Flatiron<br>
-									<input type="radio" name="salads" value="merida" id="merida"> M&eacute;rida<br>
-									<input type="radio" name="salads" value="steak_caesar" id="steak_caesar"> Steak Caesar<br><br>
-								</form>
-							</div>
-							<div class="col-sm-6 col-md-3">
-								<h4> Toasted Sandwiches </h4>
-								<form action="/action_page.php" method="get">
-									<input type="radio" name="toasted_sandwiches" value="chipotle_steak" id="chipotle_steak"> Chipotle Steak<br>
-									<input type="radio" name="toasted_sandwiches" value="tender" id="tender"> Tender Belly BLT+A<br>
-									<input type="radio" name="toasted_sandwiches" value="basil_chicken" id="basil_chicken"> Basil Chicken<br>
-									<input type="radio" name="toasted_sandwiches" value="blueberry" id="blueberry"> Blueberry Pesto<br><br>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="panel panel-default">
-				<div class="panel-heading" role="tab" id="headingSix">
-					<h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#StarGinger" aria-expanded="false" aria-controls="collapseSix">
-          Star Ginger
-        </a>
-      </h4>
-				</div>
-				<div id="StarGinger" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-					<div class="panel-body">
-						<div class="row">
-							<form action="/action_page.php" method="get">
-								<div class="col-sm-6 col-md-4">
-									<h4> Asian Grill </h4>
-									<input type="radio" name="star" value="thai_bbq" id="thai_bbq"> Thai BBQ Chicken<br>
-									<input type="radio" name="star" value="lemongrass" id="lemongrass"> Lemongrass Tofu<br>
-									<input type="radio" name="star" value="popsticker" id="popsticker"> Popsticker<br>
-									<input type="radio" name="star" value="egg" id="egg"> Egg Roll<br>
-									<input type="radio" name="star" value="fresh" id="fresh"> Fresh Vegetables<br><br>
-								</div>
-								<div class="col-sm-6 col-md-4">
-									<h4> Hot Wok and Stir Fry </h4>
-									<input type="radio" name="star" value="orange" id="orange"> Orange Chicken<br>
-									<input type="radio" name="star" value="thai_chicken" id="thai_chicken"> Thai Chicken Curry<br>
-									<input type="radio" name="star" value="special" id="special"> Wok Special of the Day<br>
-								</div>
-								<div class="col-sm-6 col-md-4">
-									<h4> Pho Noodle Bowls </h4>
-									<input type="radio" name="star" value="tofu_veggies_v" id="tofu_veggies_v"> Vietnamese Pho with Tofu and Veggies<br>
-									<input type="radio" name="star" value="chicken_v" id="chicken_v"> Vietnamese Pho with chicken<br>
-									<input type="radio" name="star" value="beef_v" id="beef_v"> Vietnamese Pho with beef<br>
-									<input type="radio" name="star" value="tofu_veggies_s" id="tofu_veggies_s"> Spicy Thai with Tofu and Veggies<br>
-									<input type="radio" name="star" value="chicken_s" id="chicken_s"> Spicy Thai with Chicken<br>
-									<input type="radio" name="star" value="beef_s" id="beef_s"> Spicy Thai with Beef <br><br>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- <p class='text-center'><a role='button' class='btn btn-primary' href='order.html' target='_self'>Add To Order</a></p> -->
-		<p class="text-center"><button type="button" class="btn btn-primary" id="calc" onclick="checkingstuff()">Add To Order</button></p>
-		<p class="text-center"><button type="button" class='btn btn-primary' id="finalcalc" onclick="chugOut()">Checkout</a></p>
-	</div>
+               <!-- </li> -->
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+               <li><a href="login.html" id="LoginCreateAccount">Login/Create Account</a></li>
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="ProfileDropdown">Profile <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="information.html">Information</a></li>
+                     <li><a href="locations.html">Saved Locations</a></li>
+                     <li><a href="saved_orders.html">Saved Orders</a></li>
+                     <li role="separator" class="divider"></li>
+                     <li><a href="settings.html">Settings</a></li>
+                     <li><a href="login.html" id="Logout">Log Out</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+   </nav>
+   <div class="jumbotron" id="jumbo">
+      <div class="container">
+         <div>
+            <div class="row">
+               <div class="col-sm-12 col-md-12">
+                  <h2> Pick delivery location: </h2>
+               </div>
+            </div>
+            <div class="row">
+               <form action="/action_page.php" method="get">
+                  <div class="col-sm-12 col-md-3">
+                     <input type="radio" name="dorm" value="Alumni Hall" id="alumni"> Alumni Hall<br>
+                     <input type="radio" name="dorm" value="Carroll Hall" id="carroll"> Carroll Hall<br>
+                     <input type="radio" name="dorm" value="Dillon Hall" id="dillon"> Dillon Hall<br>
+                     <input type="radio" name="dorm" value="Duncan Hall" id="duncan"> Duncan Hall<br>
+                     <input type="radio" name="dorm" value="Dunne Hall" id="dunne"> Dunne Hall<br>
+                     <input type="radio" name="dorm" value="Fisher Hall" id="fisher"> Fisher Hall<br>
+                     <input type="radio" name="dorm" value="Keenan Hall" id="keenan"> Keenan Hall<br>
+                     <input type="radio" name="dorm" value="Keough Hall" id="keough"> Keough Hall<br>
+                  </div>
+                  <div class="col-sm-12 col-md-3">
+                     <input type="radio" name="dorm" value="Knott Hall" id="knott"> Knott Hall<br>
+                     <input type="radio" name="dorm" value="Morrissey Hall" id="morrissey"> Morrissey Hall<br>
+                     <input type="radio" name="dorm" value="O'Neill Family Hall" id="oneill"> O'neill Family Hall<br>
+                     <input type="radio" name="dorm" value="Siegfried Hall" id="siegfried"> Siegfried Hall<br>
+                     <input type="radio" name="dorm" value="Sorin College" id="sorin"> Sorin College<br>
+                     <input type="radio" name="dorm" value="St. Edward's Hall" id="steds"> St. Edward's Hall<br>
+                     <input type="radio" name="dorm" value="Stanford Hall" id="stanford"> Stanford Hall<br>
+                     <input type="radio" name="dorm" value="Zahm Hall" id="zahm"> Zahm Hall<br>
+                  </div>
+                  <div class="col-sm-12 col-md-3">
+                     <input type="radio" name="dorm" value="Badin Hall" id="badin"> Badin Hall<br>
+                     <input type="radio" name="dorm" value="Breen-Phillips Hall" id="breen"> Breen-Phillips Hall<br>
+                     <input type="radio" name="dorm" value="Cavanaugh Hall" id="cav"> Cavanaugh Hall<br>
+                     <input type="radio" name="dorm" value="Flaherty Hall" id="flaherty"> Flaherty Hall<br>
+                     <input type="radio" name="dorm" value="Farley Hall" id="Farley"> Farley Hall<br>
+                     <input type="radio" name="dorm" value="Howard Hall" id="howard"> Howard Hall<br>
+                     <input type="radio" name="dorm" value="Lewis Hall" id="lewis"> Lewis Hall<br>
+                  </div>
+                  <div class="col-sm-12 col-md-3">
+                     <input type="radio" name="dorm" value="Lyons Hall" id="lyons"> Lyons Hall<br>
+                     <input type="radio" name="dorm" value="McGlinn Hall" id="mcglinn"> McGlinn Hall<br>
+                     <input type="radio" name="dorm" value="Pasquerilla East Hall" id="pasquerilla_e"> Pasquerilla East Hall<br>
+                     <input type="radio" name="dorm" value="Pasquerilla West Hall" id="pasquerilla_w"> Pasquerilla West Hall<br>
+                     <input type="radio" name="dorm" value="Ryan Hall" id="ryan"> Ryan Hall<br>
+                     <input type="radio" name="dorm" value="Walsh Hall" id="walsh"> Walsh Hall<br>
+                     <input type="radio" name="dorm" value="Welsh Family" id="welsh"> Welsh Family Hall<br>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <!-- <p class='text-center'><a role='button' class='btn btn-primary' href='order.html' target='_self'>Add To Order</a></p> -->
+      <p class="text-center" id="paragraph"><a href="order_next.html"><button type="button" class="btn btn-primary" id="next">Next</button></a></p>
+   </div>
 
 
 
-	<!--
+   <!--
   <ul class='list-unstyled'>
     <li class="dropdown">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Subway <span class="caret"></span></a>
@@ -614,19 +225,19 @@
   </li>
   </ul> -->
 
-	<script src="index.js"></script>
+   <script src="index.js"></script>
 
 
 
-	<!-- jQuery Javascript Library (required by Bootstrap) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <!-- jQuery Javascript Library (required by Bootstrap) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-	<!-- jQuery UI Library (optional) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+   <!-- jQuery UI Library (optional) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 
-	<!-- Bootstrap Library -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <!-- Bootstrap Library -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 </body>
 
