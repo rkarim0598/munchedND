@@ -1,25 +1,3 @@
-var obj = {
-  "rmcinty3": {
-    "password": "password",
-    "email": "rmcinty3@nd.edu",
-    "phone": "4062493755"
-  },
-  "rkarim": {
-    "password": "6balls",
-    "email": "rkarim@nd.edu",
-    "phone": "2194404899"
-  },
-  "cwall": {
-    "password": "neptune",
-    "email": "cwall@nd.edu",
-    "phone": "7326931566"
-  },
-  "kdigiorn": {
-    "password": "notdelivery",
-    "email": "kdigiorn@nd.edu",
-    "phone": "2392167016"
-  }
-};
 /*
 document.getElementById("Login").addEventListener("click", function() {
   login();
@@ -37,8 +15,8 @@ function login() { // gets value from netID and pw textbox and checks if valid
 
 
 function checkUser(netID, pw) { // check if user exists/password is correct
-  if (netID in obj) {
-    if (obj[netID]["password"] == pw) {
+  if (netID in JSON.parse(localStorage.getItem("InsecureAccounts"))) {
+    if (JSON.parse(localStorage.getItem("InsecureAccounts"))[netID]["password"] == pw) {
 			localStorage.LoggedIn = "TRUE";
 			localStorage.User = netID;
 			location.href = "index.html";
@@ -60,10 +38,12 @@ function checkPassword() { // check if two passwords match
 
   if (id != "" && email != "" && phone != "" && pass1.length >= 6) {
     if (pass1 == pass2) {
-      if (!(id in obj)) {
-				obj[id] = {"password":pass1,
+      if (!(id in JSON.parse(localStorage.getItem("InsecureAccounts")))) {
+				var accounts = JSON.parse(localStorage.getItem("InsecureAccounts"));
+				accounts[id] = {"password":pass1,
 										"email":email,
 										"phone":phone};
+				localStorage.InsecureAccounts = JSON.stringify(accounts);
 				alert("Account created!");
 			}
 			else {alert("netID " + id + " already has an account");}
