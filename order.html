@@ -25,15 +25,14 @@
     }
 
     #accordion {
-      width: 90%;
+      margin-right: 10%;
       opacity: 0.9;
-      margin-left: 10%
+      margin-left: 10%;
     }
 
-    #Wrapper{
+    #Wrapper {
       width: 100%;
     }
-
   </style>
 
   <!-- jQuery UI CSS (optional) -->
@@ -282,9 +281,72 @@
         </div>
         <div id="Modern" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
           <div class="panel-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            <div class="row">
+              <div class="col-sm-6 col-md-3">
+                <h4> Breakfast Sandwiches and Burritos </h4>
+                <form action="/action_page.php" method="get">
+                  <input type="radio" name="burrito" value="rocket" id="rocket"> The Rocket<br>
+                  <input type="radio" name="burrito" value="chipotle_bacon" id="chipotle_bacon"> Chipotle Bacon<br>
+                  <input type="radio" name="burrito" value="maple" id="maple"> Maple Sausage<br>
+                  <input type="radio" name="burrito" value="classic" id="classic"> Classic Sandwich<br>
+                  <input type="radio" name="burrito" value="green_chili" id="green_chili"> Green Chili Burrito<br>
+                  <input type="radio" name="burrito" value="chili_bacon" id="chili_bacon"> Chili Bacon Burrito<br><br>
+                </form>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <h4> Oatmeals </h4>
+                <form action="/action_page.php" method="get">
+                  <input type="radio" name="oatmeal" value="peanut_butter" id="peanut_butter"> Peanut Butter Banana<br>
+                  <input type="radio" name="oatmeal" value="basic" id="basic"> Basic Oatmeal<br>
+                  <input type="radio" name="oatmeal" value="super" id="super"> Super Berry<br>
+                </form>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <h4> Avacado Toast </h4>
+                <form action="/action_page.php" method="get">
+                  <input type="radio" name="Avacado" value="modern" id="modern"> Modern Avo Toast<br>
+                </form>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <h4> Brick Oven Pizza </h4>
+                <form action="/action_page.php" method="get">
+                  <input type="radio" name="brick" value="m'rita" id="m'rita"> M'rita<br>
+                  <input type="radio" name="brick" value="three" id="three"> Three Cheese<br>
+                  <input type="radio" name="brick" value="pepe" id="pepe"> Pep&eacute;<br>
+                  <input type="radio" name="brick" value="crimini" id="crimini"> Crimini Kale<br>
+                  <input type="radio" name="brick" value="bacon_corn" id="bacon_corn"> Bacon Corn<br>
+                  <input type="radio" name="brick" value="bbq" id="bbq"> BBQ<br>
+                  <input type="radio" name="brick" value="sausage" id="sausage"> Sausage Pesto<br><br>
+                </form>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <h4> Soups </h4>
+                <form action="/action_page.php" method="get">
+                  <input type="radio" name="soup" value="split" id="split"> Curry Split Pea<br>
+                  <input type="radio" name="soup" value="green_chili_soup" id="green_chili_soup"> Green Chili<br>
+                  <input type="radio" name="soup" value="tomato_basil" id="tomato_basil"> Tomato Basil<br><br>
+                </form>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <h4> Salads </h4>
+                <form action="/action_page.php" method="get">
+                  <input type="radio" name="salads" value="thai" id="thai"> Thai Coconut<br>
+                  <input type="radio" name="salads" value="farmer" id="farmer"> Farmer<br>
+                  <input type="radio" name="salads" value="flat" id="flat"> Flatiron<br>
+                  <input type="radio" name="salads" value="merida" id="merida"> M&eacute;rida<br>
+                  <input type="radio" name="salads" value="steak_caesar" id="steak_caesar"> Steak Caesar<br><br>
+                </form>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <h4> Toasted Sandwiches </h4>
+                <form action="/action_page.php" method="get">
+                  <input type="radio" name="toasted_sandwiches" value="chipotle_steak" id="chipotle_steak"> Chipotle Steak<br>
+                  <input type="radio" name="toasted_sandwiches" value="tender" id="tender"> Tender Belly BLT+A<br>
+                  <input type="radio" name="toasted_sandwiches" value="basil_chicken" id="basil_chicken"> Basil Chicken<br>
+                  <input type="radio" name="toasted_sandwiches" value="blueberry" id="blueberry"> Blueberry Pesto<br><br>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -298,13 +360,40 @@
         </div>
         <div id="StarGinger" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
           <div class="panel-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            <div class="row">
+              <form action="/action_page.php" method="get">
+                <div class="col-sm-6 col-md-4">
+                  <h4> Asian Grill </h4>
+                  <input type="radio" name="star" value="thai_bbq" id="thai_bbq"> Thai BBQ Chicken<br>
+                  <input type="radio" name="star" value="lemongrass" id="lemongrass"> Lemongrass Tofu<br>
+                  <input type="radio" name="star" value="popsticker" id="popsticker"> Popsticker<br>
+                  <input type="radio" name="star" value="egg" id="egg"> Egg Roll<br>
+                  <input type="radio" name="star" value="fresh" id="fresh"> Fresh Vegetables<br><br>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <h4> Hot Wok and Stir Fry </h4>
+                  <input type="radio" name="star" value="orange" id="orange"> Orange Chicken<br>
+                  <input type="radio" name="star" value="thai_chicken" id="thai_chicken"> Thai Chicken Curry<br>
+                  <input type="radio" name="star" value="special" id="special"> Wok Special of the Day<br>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <h4> Pho Noodle Bowls </h4>
+                  <input type="radio" name="star" value="tofu_veggies_v" id="tofu_veggies_v"> Vietnamese Pho with Tofu and Veggies<br>
+                  <input type="radio" name="star" value="chicken_v" id="chicken_v"> Vietnamese Pho with chicken<br>
+                  <input type="radio" name="star" value="beef_v" id="beef_v"> Vietnamese Pho with beef<br>
+                  <input type="radio" name="star" value="tofu_veggies_s" id="tofu_veggies_s"> Spicy Thai with Tofu and Veggies<br>
+                  <input type="radio" name="star" value="chicken_s" id="chicken_s"> Spicy Thai with Chicken<br>
+                  <input type="radio" name="star" value="beef_s" id="beef_s"> Spicy Thai with Beef <br><br>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <p class='text-center'><a role='button' class='btn btn-primary' href='order.html' target='_self'>Add To Order</a></p>
+    <p class='text-center'><a role='button' class='btn btn-primary' href='payment.html' target='_self'>Checkout</a></p>
   </div>
 
 
@@ -379,6 +468,7 @@
 
   <!-- jQuery UI Library (optional) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
 
   <!-- Bootstrap Library -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
