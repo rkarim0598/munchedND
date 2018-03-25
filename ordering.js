@@ -85,9 +85,11 @@ var alldastuff = {
 var total = 0;
 var strtotal = "";
 var order = "";
+var ordered = 0;
+var shipcost = 5;
 
 function checkingstuff() {
-    var shipcost = 5;
+    //var shipcost = 5;
     
     for (i in alldastuff["Subway"]["Sandwiches"]) {
 	if (document.getElementById(i).checked) {
@@ -98,12 +100,33 @@ function checkingstuff() {
     checkingextras();
     //alert("before constructorder");
     constructOrder();
-    total = total + shipcost;
-    strtotal = "$" + total;
-    alert("Your order: \n" + order + "\n\n" +
-	  "Delivery cost:  $" + shipcost + "\n" +
-          "-----------------------------------------------\n" +
-	  "Your total price:  " + strtotal );
+    //total = total + shipcost;
+    
+    if (total != 0) {
+	strtotal = "$" + total;
+	ordered = 1;
+	alert("Your order: \n" + order + "\n\n" +
+	      "Estimated Delivery cost:  $" + shipcost + "\n" +
+              "-----------------------------------------------\n" +
+	      "Your total price:  " + strtotal );
+    }
+    else { // total is 0
+	alert("Be sure to select a main food option!")
+    }
+}
+
+function chugOut() {
+    if (ordered == 1) {
+	total = total + shipcost;
+	strtotal = "$" + total;
+	alert("Your order: \n" + order + "\n\n" +
+	      "Delivery cost:  $" + shipcost + "\n" +
+              "-----------------------------------------------\n" +
+	      "Your total price:  " + strtotal );
+    }
+    else {
+	alert("You haven't added anything!");
+    }
 }
 
 function checkingextras() {
