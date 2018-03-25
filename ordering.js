@@ -21,7 +21,10 @@ var alldastuff = {
 	    "deluxe": 2.00,
 	    "extra_cheese": 1.50,
 	    "bacon": 10.00,
+<<<<<<< HEAD
+=======
 	    //"pepperoni": 1.50,
+>>>>>>> 0db216be310703ff077e7c067e35f7bf5a8bed25
 	    "guac": 25.00,
 	    "double": 1.50
 	},
@@ -136,6 +139,8 @@ function checkingextras() {
     	}
     }
 }
+<<<<<<< HEAD
+=======
 
 function constructOrder() {
     //alert("hi");
@@ -181,3 +186,4 @@ function constructOrder() {
 		
 		alert(document.getElementById(currid).getClass() + ": " + document.getElementById(currid).value + '\n');
 */
+>>>>>>> 0db216be310703ff077e7c067e35f7bf5a8bed25
