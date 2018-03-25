@@ -26,9 +26,22 @@
     }
 
     #accordion {
+<<<<<<< HEAD
+      <<<<<<< HEAD <<<<<<< HEAD margin-right: 10%;
+      opacity: 0.9;
+      margin-left: 10%;
+      =======opacity: 0.9;
+      margin-left: 10%;
+      margin-right: 10%;
+      >>>>>>>e3beeb1a8e9ee5b1b65c37b2cdaf7ddb74c4e4d4=======opacity: 0.9;
+      margin-left: 10%;
+      margin-right: 10%;
+      >>>>>>>e3beeb1a8e9ee5b1b65c37b2cdaf7ddb74c4e4d4
+=======
       margin-right: 10%;
       opacity: 0.9;
       margin-left: 10%;
+>>>>>>> cbd2ab2797a944cd1c9cf9417bcd55b5372dc0ca
     }
 
     #Wrapper {
@@ -48,7 +61,7 @@
 </head>
 
 <body>
-
+  <script type="text/javascript" src="ordering.js"></script>
   <!-- [ This is where your body content will go... ] -->
 
   <nav class="navbar navbar-default">
@@ -176,7 +189,7 @@
                   <input type="checkbox" name="extras" value="deluxe" id="deluxe"> Deluxe<br>
                   <input type="checkbox" name="extras" value="extra_cheese" id="extra_cheese"> Extra Cheese<br>
                   <input type="checkbox" name="extras" value="bacon" id="bacon"> Bacon<br>
-                  <input type="checkbox" name="extras" value="pepperoni" id="pepporoni"> Pepperoni<br>
+                  <!-- <input type="checkbox" name="extras" value="pepperoni" id="pepporoni"> Pepperoni<br> -->
                   <input type="checkbox" name="extras" value="guac" id="guac"> Guacamole<br>
                   <input type="checkbox" name="extras" value="double" id="double"> Double Meat<br><br>
                 </form>
@@ -234,9 +247,50 @@
         </div>
         <div id="SmashBurger" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
           <div class="panel-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            <div class="row">
+              <form action="/action_page.php" method="get">
+                <div class="col-sm-6 col-md-3">
+                  <h4> SmashBurger </h4>
+                  <input type="radio" name="smash" value="classic_smash" id="class_smash"> Classic Smash<br>
+                  <input type="radio" name="smash" value="bacon_cheese" id="bacon_cheese"> Bacon Cheeseburger<br>
+                  <input type="radio" name="smash" value="bacon_avocado_b" id="bacon_avocado_b"> Bacon Avocado Club<br>
+                  <input type="radio" name="smash" value="truffle_b" id="truffle_b"> Truffle Mushroom Swiss<br>
+                  <input type="radio" name="smash" value="spicy" id="spicy"> Spicy Jalepe&ntilde;o BBQ<br><br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <h4> SmashChicken </h4>
+                  <input type="radio" name="smash" value="classic_c" id="classic_C"> Classic Chicken<br>
+                  <input type="radio" name="smash" value="bacon_avocado_c" id="bacon_avocado_c"> Bacon Avocado Club<br>
+                  <input type="radio" name="smash" value="truffle_c" id="truffle_c"> Truffle Mushroom Swiss<br><br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <h4> Fresh Salads </h4>
+                  <form action="/action_page.php" method="get">
+                    <input type="radio" name="smash" value="harvest" id="harvest"> Harvest<br>
+                    <input type="radio" name="smash" value="cobb" id="cobb"> Classic Cobb<br><br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <h4> Fries and Sides </h4>
+                  <input type="radio" name="smash" value="tots" id="tots"> Tots<br>
+                  <input type="radio" name="smash" value="smashtots" id="smashtots"> SmashTots<br>
+                  <input type="radio" name="smash" value="french" id="french"> French Fries<br>
+                  <input type="radio" name="smash" value="smashfries" id="smashfires"> Smashfries<br>
+                  <input type="radio" name="smash" value="sweet_potato" id="sweet_potato"> Sweet Potato Fries<br><br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <h4> Other Entrees </h4>
+                  <input type="radio" name="smash" value="ranch" id="ranch"> Avocado Ranch Black Bean Burger<br>
+                  <input type="radio" name="smash" value="strips" id="strips"> Chicken Strips<br><br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <h4> Shakes </h4>
+                  <input type="radio" name="smash" value="chocolate" id="chocolate"> Chocolate<br>
+                  <input type="radio" name="smash" value="vanilla" id="vanilla"> Vanilla<br>
+                  <input type="radio" name="smash" value="straw" id="straw"> Strawberry<br>
+                  <input type="radio" name="smash" value="oreo" id="oreo"> Oreo<br><br>
+                </div>
+                </form>
+            </div>
           </div>
         </div>
       </div>
@@ -250,13 +304,118 @@
         </div>
         <div id="TacoBell" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="panel-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
-            on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
-            raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            <div class="row">
+              <form action="/action_page.php" method="get">
+                <div class="col-sm-6 col-md-3">
+                  <h4> Cravings Menu </h4>
+                  <input type="radio" name="taco" value="spicy_potato" id="spicy_loyola"> Spicy Potato Soft Taco<br>
+                  <input type="radio" name="taco" value="spicy_tostado" id="spicy_tostado"> Spicy Tostado<br>
+                  <input type="radio" name="taco" value="cheesy_bean" id="cheesy_bean"> Cheesy Bean and Rice Burrito<br>
+                  <input type="radio" name="taco" value="cheesy_roll" id="cheesy_roll"> Cheesy Roll-Up<br>
+                  <input type="radio" name="taco" value="triple" id="triple"> Triple Layer Nachos<br>
+                  <input type="radio" name="taco" value="mini" id="mini"> Beefy Mini Quesadilla<br>
+                  <input type="radio" name="taco" value="fritos" id="fritos"> Beefy FRITOS Burrito<br>
+                  <input type="radio" name="taco" value="shredded" id="shredded"> Shredded Chicken Mini Quesadilla<br>
+                  <input type="radio" name="taco" value="caramel" id="caramel"> Caramel Apple Empanada<br>
+                  <input type="radio" name="taco" value="twists" id="twists"> Cinnamon Twists<br><br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <h4> Tacos </h4>
+                  <input type="radio" name="taco" value="doritos" id="doritos"> Doritos Locos Tacos<br>
+                  <input type="radio" name="taco" value="crunchy" id="crunchy"> Crunchy Taco<br>
+                  <input type="radio" name="taco" value="soft" id="soft"> Soft Taco<br>
+                  <input type="radio" name="taco" value="12" id="12"> Taco 12 Pack<br>
+                  <input type="radio" name="taco" value="decker" id="decker"> Double Decker Taco<br><br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <h4> Burritos </h4>
+                  <form action="/action_page.php" method="get">
+                    <input type="radio" name="taco" value="supreme" id="supreme"> Burrito Supreme<br>
+                    <input type="radio" name="taco" value="7" id="7"> 7-Layer Burrito<br>
+                    <input type="radio" name="taco" value="5" id="5"> Beefy 5-Layer Burrito<br>
+                    <input type="radio" name="taco" value="shredded_chicken" id="shredded_chicken"> Shredded Chicken Burrito<br>
+                    <input type="radio" name="taco" value="cheesy_potato" id="cheesy_potato"> Cheesy Potato Burrito<br>
+                    <input type="radio" name="taco" value="xxl" id="xxl"> XXL Grilled Stuft Burrito<br>
+                    <input type="radio" name="taco" value="bean" id="bean"> Bean Burrito<br>
+                    <input type="radio" name="taco" value="combo_b" id="combo_b"> Combo Burrito<br><br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <h4> Specialties </h4>
+                  <input type="radio" name="taco" value="crunchwrap" id="crunchwrap"> Crunchwrap Supreme<br>
+                  <input type="radio" name="taco" value="chalupa" id="chalupa"> Chalupa Supreme<br>
+                  <input type="radio" name="taco" value="fiesta" id="fiesta"> Fiesta Taco Salad<br>
+                  <input type="radio" name="taco" value="mexican" id="mexican"> Mexican Pizza<br>
+                  <input type="radio" name="taco" value="quesadilla" id="quesadilla"> quesadilla<br>
+                  <input type="radio" name="taco" value="gordita" id="gordita"> Cheesy Gordita Crunch<br>
+                  <input type="radio" name="taco" value="cheese_quesadilla" id="cheese_quesadilla"> Cheese Quesadilla<br>
+                  <input type="radio" name="taco" value="cheesy_fiesta" id="cheesy_fiesta"> Cheesy Fiesta Potatoes<br><br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <h4> Nachos </h4>
+                  <input type="radio" name="taco" value="nachos_s" id="nachos_s"> Nachos Supreme<br>
+                  <input type="radio" name="taco" value="beli" id="beli"> Nachos BeliGrande<br><br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <h4> Quesarito </h4>
+                  <input type="radio" name="taco" value="seasoned_q" id="seasoned_q"> Seasoned Beef Quesarito<br>
+                  <input type="radio" name="taco" value="shredded_q" id="shredded_q"> Shredded Chicken Quesarito<br>
+                  <input type="radio" name="taco" value="steak_q" id="steak_q"> Steak Quesarito<br><br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <h4> Power Menu </h4>
+                  <input type="radio" name="taco" value="bowl_p" id="bowl_p"> Bowl<br>
+                  <input type="radio" name="taco" value="burrito_p" id="burrito_p"> Burrito<br><br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <h4> Snacks and Desserts </h4>
+                  <input type="radio" name="taco" value="chipotle_l" id="chipotle_l"> Chipotle Chicken Loaded Griller<br>
+                  <input type="radio" name="taco" value="cheesy_l" id="cheesy_l"> Cheesy Potato Loaded Griller<br>
+                  <input type="radio" name="taco" value="beefy_l" id="beefy_l"> Beefy Nacho Loaded Griller<br>
+                  <input type="radio" name="taco" value="cinnabon" id="cinnabon"> Cinnabon Delights<br><br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <h4> Combos </h4>
+                  <input type="radio" name="taco" value="burrito_combo" id="burrito_combo"> Burrito Supreme<br>
+                  <input type="radio" name="taco" value="xxl_combo" id="xxl_combo"> XXL Grilled Stuft Burrito<br>
+                  <input type="radio" name="taco" value="beli_combo" id="beli_combo"> Nachos BeliGrande<br>
+                  <input type="radio" name="taco" value="chalupas_combo" id="chalupas_combo"> Chalupas Supreme<br>
+                  <input type="radio" name="taco" value="crunchwrap_combo" id="crunchwrap_combo"> Crunchwrap Supreme<br>
+                  <input type="radio" name="taco" value="gordita_combo" id="gordita_combo"> Cheesy Gordita Crunch<br>
+                  <input type="radio" name="taco" value="3s_combo" id="3s_combo"> 3 Tacos Supreme<br>
+                  <input type="radio" name="taco" value="mexican_combo" id="mexican_combo"> Mexican Pizza<br>
+                  <input type="radio" name="taco" value="quesadilla_combo" id="quesadilla_combo"> Quesadilla<br>
+                  <input type="radio" name="taco" value="3d_combo" id="3d_combo"> 3 Doritos Tacos<br>
+                  <input type="radio" name="taco" value="GRANDE" id="GRANDE"> GRANDE MEAL<br>
+                  <input type="radio" name="taco" value="3_combo" id="3_combo"> 3 Tacos<br><br>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                  <h4> Pizza </h4>
+                  <input type="radio" name="taco" value="supreme_p" id="supreme_p"> Supreme<br>
+                  <input type="radio" name="taco" value="pepperoni_p" id="pepperoni_p"> Pepperoni<br>
+                  <input type="radio" name="taco" value="cheese_p" id="cheese_p"> Cheese<br><br>
+               </div>
+               <div class="col-sm-6 col-md-3">
+                 <h4> Pasta </h4>
+                 <input type="radio" name="taco" value="chicken_a" id="chicken_a"> Chicken Alfredo<br>
+                 <input type="radio" name="taco" value="meaty" id="meaty"> Meaty Marinara<br><br>
+               </div>
+               <div class="col-sm-6 col-md-3">
+                 <h4> Snacks </h4>
+                 <input type="radio" name="taco" value="breadsticks" id="breadsticks"> Breadsticks<br>
+                 <input type="radio" name="taco" value="cheesesticks" id="cheesesticks"> Cheese Sticks<br>
+                 <input type="radio" name="taco" value="cinnamonsticks" id="cinnamonsticks"> Cinnamon Sticks<br><br>
+              </div>
+              <div class="col-sm-6 col-md-3">
+                <h4> Baked Wings </h4>
+                <input type="radio" name="taco" value="6" id="6"> 6 Count<br>
+                <input type="radio" name="taco" value="12" id="12"> 12 Count<br><br>
+              </div>
+                </form>
+            </div>
           </div>
         </div>
       </div>
-      <div class="panel panel-default">
+      <!-- <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingFour">
           <h4 class="panel-title">
         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#Hagerty" aria-expanded="false" aria-controls="collapseFour">
@@ -271,7 +430,7 @@
             raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingFive">
           <h4 class="panel-title">
@@ -299,7 +458,7 @@
                 <form action="/action_page.php" method="get">
                   <input type="radio" name="oatmeal" value="peanut_butter" id="peanut_butter"> Peanut Butter Banana<br>
                   <input type="radio" name="oatmeal" value="basic" id="basic"> Basic Oatmeal<br>
-                  <input type="radio" name="oatmeal" value="super" id="super"> Super Berry<br>
+                  <input type="radio" name="oatmeal" value="super" id="super"> Super Berry<br><br>
                 </form>
               </div>
               <div class="col-sm-6 col-md-3">
@@ -393,7 +552,8 @@
       </div>
     </div>
 
-    <p class='text-center'><a role='button' class='btn btn-primary' href='order.html' target='_self'>Add To Order</a></p>
+    <!-- <p class='text-center'><a role='button' class='btn btn-primary' href='order.html' target='_self'>Add To Order</a></p> -->
+    <p class="text-center"><button type="button" class="btn btn-primary" id="calc" onclick="checkingstuff()">Add To Order</button></p>
     <p class='text-center'><a role='button' class='btn btn-primary' href='payment.html' target='_self'>Checkout</a></p>
   </div>
 
